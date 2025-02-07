@@ -2,37 +2,84 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.board {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.task-item {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding: 10px;
+  border: 0.7px solid lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+  font: 20px;
+  margin: 10px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-item:hover {
+  background-attachment: lightgray;
+}
+
+.btns {
+  width: 200px;
+  padding: 15px;
+  background-color: lightblue;
+  color: black;
+  font-size: 18px;
+  font-weight: 500px;
+  cursor: pointer;
+}
+
+.btns:hover {
+  background-color: aquamarine;
+}
+
+input {
+  width: 250px;
+  height: 35px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.btn {
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+}
+.btn:hover {
+  background-color: purple;
+  cursor: poiner;
+  border-radius: 50%;
+}
+
+.todo-col {
+  background-color: beige;
+  padding: 10px 0px;
+}
+.doing-col {
+  background-color: lightblue;
+  padding: 10px 0px;
+}
+.done-col {
+  background-color: lightgreen;
+  padding: 10px 0px;
+}
+.todo {
+  width: 33%;
+  height: 400px;
+}
+.doing {
+  width: 33%;
+  height: 400px;
+}
+.done {
+  width: 33%;
+  height: 400px;
 }
